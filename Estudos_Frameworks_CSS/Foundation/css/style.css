@@ -1,0 +1,19 @@
+.container{    
+    margin: 0 auto;    
+    padding: 10px;
+}
+
+#dsmlogo{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.a{
+    color: blue;
+}
+
+.callout{
+    margin: 0 auto;    
+    padding: 10px;  
+}

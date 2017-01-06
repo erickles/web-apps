@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
-    
-</head>
-<body>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-<div id="meuPainel" class="container">
-  
-        <div  class="panel panel-default">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-            <div class="panel-body">
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 
-                <img id="dsmlogo" src="images/logodsm.jpg" class="img-responsive" alt="DSM" width="304" height="236">
+      <div class="row">
 
-                <form>
-                    <div class="form-group">
-      
-                        <input type="text" data-mask="999-99-999-9999-9" class="form-control" id="usr" placeholder="Usuário">
-                    </div>
+        <form class="col s12">
 
-                    <div class="form-group">      
-                        <input type="password" class="form-control" id="pwd" placeholder="Senha">
-                    </div>
+            <div class="row">
 
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
+                <div class="input-field col s6">
+                    <input id="user" type="text" class="validate">
+                    <label for="user">Usuário</label>
+                </div>
 
-                    <center>
-                    <div id="grupoBtn" class="btn-group">
-                        
-                        <a href="#" class="btn btn-link btn-sm">Crie seu cadastro</a>                    
-                        <a href="#" class="btn btn-link btn-sm">Esqueci minha senha</a>
-                    </div>
-                    </center>
-                </form>
-            </div>
-        </div>
-  
-</div>
+                <div class="input-field col s6">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Senha</label>
+                </div>
+        </div>        
 
-</body>
-</html>
+        </form>
+    </div>
+
+    </body>
+  </html>

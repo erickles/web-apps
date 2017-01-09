@@ -1,0 +1,30 @@
+nav {
+    height: 60px;
+    line-height: 60px;
+    background: #1565c0;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 60px;
+    line-height: 60px;
+}
+
+nav .button-collapse i {
+    height: 60px;
+    line-height: 60px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+@media screen and (min-width: 992px){
+    .side-nav {
+        margin-top:62px;
+        width:25%;        
+    }
+
+    .brand-logo{
+        margin-left: 60px;
+    }
+}

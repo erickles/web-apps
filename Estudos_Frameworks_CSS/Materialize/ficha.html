@@ -9,7 +9,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-    <link type="text/css" rel="stylesheet" href="css/pedmobilemulti.css" />
+    <link type="text/css" rel="stylesheet" href="css/pedmobilemulti.css"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,10 +26,10 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-                <a href="#" class="brand-logo">Perfil</a>
+                <a href="#" class="brand-logo">Ficha de cliente</a>
 
                 <ul id="nav-mobile" class="right">
-                    <li><a href="#!">Salvar</a></li>
+                    <li><a href="#!">Efetivar</a></li>
                 </ul>
 
             </div>
@@ -45,13 +45,8 @@
             <ul id="slide-out" class="side-nav fixed s3">
 
                 <li>
-                    <div class="userView">
-                        <!--div class="background">
-                                    <img src="images/logodsm.jpg">
-                                </div-->
-                        <!--a href="#!user"><img class="circle" src="images/logodsm.jpg"></a-->
-                        <a href="#!name"><span class="black-text name">BARBOSA E MUROSAKI LTDA</span></a>
-                        <!--a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a-->
+                    <div class="userView">                        
+                        <a href="#!name"><span class="black-text name">BARBOSA E MUROSAKI LTDA</span></a>                        
                     </div>
                 </li>
 
@@ -99,36 +94,89 @@
 
         </div>
 
-        <div class="col s12 m12 l9">
+        <div class="section col s12 m12 l9">
 
-            <div class="input-field col s12 m2 l2">
-                <input disabled id="codCliente" type="text" class="validate" value="3076">
-                <label for="codRepresentante">Código</label>
-            </div>
-
-            <div class="input-field col s12 m8 l8">
-                <input id="nomeCliente" type="text" class="validate" value="BARBOSA E MUROSAKI REPRES. LTDA ME">
-                <label for="nomeCliente">Nome Representante</label>
-            </div>
-
-            <div class="input-field col s12 m2 l2">
-                <input disabled id="microreg" type="text" class="validate" value="SP0101">
+            <div class="input-field col s6 m6 l6">
+                <input id="microreg" type="text" class="validate">
                 <label for="microreg">Micro regiao</label>
             </div>
 
-            <div class="input-field col s12 m3 l3">
-                <input id="telefoneCelular" type="text" class="validate" value="(11)99740-2216">
-                <label for="telefoneCelular">Tel. Celular</label>
+            <div class="input-field col s6 m6 l6">
+                <input id="dataNascimento" type="date" class="datepicker">
+                <label for="dataNascimento">Data Nasc/Const</label>
             </div>
 
-            <div class="input-field col s12 m3 l3">
-                <input id="telefoneFixo" type="text" class="validate" value="(11)3728-7736">
-                <label for="telefoneFixo">Tel. Fixo</label>
+            <div class="input-field col s12 m2 l2">
+                <input disabled id="codCliente" type="text" class="validate" value="0">
+                <label for="codCliente">Código</label>
             </div>
 
-            <div class="input-field col s12 m6 l6">
-                <input id="email" type="email" class="validate" value="erick.souza@dsm.com">
-                <label for="email">E-mail</label>
+            <div class="input-field col s12 m10 l10">
+                <input id="nomeCliente" type="text" class="validate">
+                <label for="nomeCliente">Nome cliente</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="nomeFantasia" type="text" class="validate">
+                <label for="nomeFantasia">Nome Fantasia</label>
+            </div>
+
+            <div class="input-field col s12 m4 l4">
+                <input id="docCliente" type="text" class="validate">
+                <label for="docCliente">CPF/CNPJ</label>
+            </div>
+
+            <div class="input-field col s12 m4 l4">
+                <input id="inscCliente" type="text" class="validate">
+                <label for="inscCliente">Inscricao Est.</label>
+            </div>
+
+            <div class="input-field col s12 m4 l4">
+                <input id="docClienteSP" type="text" class="validate">
+                <label for="docClienteSP">CPF p/ SP</label>
+            </div>
+
+            <div class="input-field col s12 m4 l4">
+
+                <select>
+                                <option value="" disabled selected>Escolha uma opcao</option>
+                                <option value="1">Pessoa fisica</option>
+                                <option value="2">Pessoa juridica</option>                            
+                            </select>
+                <label>Natureza</label>
+
+            </div>
+
+            <div class="input-field col s12 m4 l4">
+
+                <select id="selectBoleto">
+                                <option value="" disabled selected>Escolha uma opcao</option>
+                                <option value="1">Acompanha NF</option>
+                                <option value="2">Via correio</option>                            
+                            </select>
+                <label for="selectBoleto">Boleto</label>
+
+            </div>
+
+            <div class="input-field col s12 m4 l4">
+
+                <select>
+                                <option value="" disabled selected>Escolha uma opcao</option>
+                                <option value="1">Consumidor</option>
+                                <option value="2">Revenda</option>                            
+                            </select>
+                <label>Canal</label>
+
+            </div>
+
+            <div class="file-field input-field col s12">
+                <div class="btn">
+                    <span>Doctos</span>
+                    <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Adicione um ou mais arquivos">
+                </div>
             </div>
 
         </div>
